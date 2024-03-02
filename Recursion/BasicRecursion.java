@@ -1,6 +1,6 @@
 class BasicRecursion
 {
-    //Printing Numbers from 1 to n
+    //Printing Numbers from 1 to 10
     public static void printNum(int n){
 
         if(n<=10){
