@@ -1,0 +1,23 @@
+class Tree
+{
+    public static int getSize(Node root)
+    {
+//add Code here.
+        int count = getCount(root);
+        return count;
+    }
+    public static int getCount(Node node)
+    {
+        int c1=0,c2=0;
+        if(node==null)
+        {
+            return 0;
+        }
+        if(node.left !=null || node.right!=null)
+        {
+            c1=getCount(node.left);
+            c2=getCount(node.right);
+        }
+        return c1+c2+1;
+    }
+}
